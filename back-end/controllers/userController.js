@@ -49,7 +49,6 @@ const registerUser = asyncHandler(async (req, res) => {
       name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
-      phoneNo: user.phoneNo,
     });
   } else {
     res.status(400);
