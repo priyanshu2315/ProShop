@@ -33,6 +33,7 @@ const registerUser = asyncHandler(async (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
+  const phoneNo = req.body.phoneNo;
 
   const userExists = await User.findOne({ email });
   if (userExists) {
