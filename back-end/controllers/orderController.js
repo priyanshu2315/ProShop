@@ -115,7 +115,7 @@ const paymentverificationOrder = asyncHandler(async (req, res) => {
       await order.save();
     }
     // res.status(200).json({ message: "Payment Successful" });
-    res.redirect(`http://localhost:5173/order/${req.params.id}`);
+    res.redirect(`https://proshop-ioh8.onrender.com/order/${req.params.id}`);
   }
 });
 
