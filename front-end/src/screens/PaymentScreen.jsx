@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { savePaymentMethod } from "../slices/cartSlice";
 
 const PaymentScreen = () => {
-  const [paymentMethod, setPaymentMethod] = useState();
+  const [paymentMethod, setPaymentMethod] = useState("");
   // console.log(paymentMethod);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const PaymentScreen = () => {
               type="radio"
               label="UPI"
               id="upi"
-              name="upi"
+              name="paymentMethod"
               value="UPI"
               onChange={(e) => setPaymentMethod(e.target.value)}
               className="my-3"
